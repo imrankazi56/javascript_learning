@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuction Assignment</title>
+</head>
+<body>
+    <script>
+        console.log("==========Without Argument==========");
+        function hello(){
+            console.log("Hello Friend");
+            console.log("Whats Today Plan");
+        }
+        hello();
+        console.log("==========With Argument==========");
+        function firstName(arg1,arg2,arg3){
+            console.log(arg1+   arg2+  arg3);
+
+        }
+        firstName("Imran","Kazi",9730936655);
+
+        console.log("==========Swap Value==========");
+
+        function argument(arg1,arg2){
+            console.log("==========Before Swap Value ==========");
+            console.log(arg1,arg2);
+            console.log("==========After Swaping Values==========");
+            
+             var temp=arg1;
+             arg1=arg2
+             arg2=temp
+             console.log(arg1,arg2);
+        }
+        argument("Virat","Anushka");
+        argument(1000,2000);
+        console.log("==========Addition Of Three Values==========");
+        function add_three_number(num1,num2,num3){
+
+            var temp=num1+num2+num3;
+            console.log(temp);
+
+        }
+        add_three_number(10.23,600,40);
+        add_three_number("Hello","Good","Morning");
+        
+        
+    </script>
+    
+</body>
+</html>
