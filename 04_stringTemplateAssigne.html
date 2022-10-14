@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template Assignment</title>
+</head>
+<body>
+    <script>
+        var stringHandsOn = function()
+        {
+            var str="     Hey you are doing good,keep it up       ";
+            console.log(`1)display String:-`,str);
+           var leng= str.length;
+            console.log(`2)String Length:-`,leng);
+            var strresult=str.trim();
+            console.log(`3)Display Remove tha leading and trailing extra spaces:-`,strresult);
+            var step3 = strresult-leng;
+            console.log(`4)Count the total number spaces count in step 3:-`,step3);
+
+            var print =strresult.charAt(0);
+            var print1 = str.length;
+            console.log(print);
+            console.log(strresult.charAt(-4));
+            var str2 = str.trim();
+            var str1 = str2.startsWith("Hey");
+            console.log("String Starts with Hey words",str1);
+            console.log(`String Ends With up words`,str2.endsWith("up"));
+
+
+
+            //console.log("Index of 'S'",str.indexOf("S"));
+            //console.log("Index of String 'Lang'",str.indexOf("lang"));
+
+
+
+        }
+        
+        stringHandsOn();
+            
+        
+    </script>
+    
+</body>
+</html>

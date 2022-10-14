@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+        console.log(10);
+        // initilization =start where 1,update by 1, condition end limit
+        for (let index = 1; index <=10; index++) {
+           // const element = array[index];
+            console.log(index);            
+        }
+        console.log("=============================================================");
+        for (let index = 0; index <=10; index=index+2) {//index ++ index value 1,index value incremnet 2 so index+2
+            console.log(index);
+            
+        }
+        //print number 50 to 40 decremnt
+        console.log("=======================================");
+        for (let index = 50; index >40; index--) {
+            console.log(index);
+            
+        }
+        //odd number
+        console.log("==================================");
+        for (let index = 1; index < 30; index=index+2) {
+            console.log(index);
+
+            
+        }
+
+        console.log("================Odd Number=============");
+        for (let index = 0; index < 30; index++) {
+            if (index%2!=0) {
+                console.log(index);
+                
+            }
+          
+            
+        }
+        var countEven=0;
+        console.log("========First 43 odd Number find=============");
+        for (let index = 0; index<1000; index++) {
+            if (index%2==0) {
+                console.log(index);
+                countEven=countEven+1;
+                if (countEven==43) {
+                    break;
+
+                    
+                }
+                
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

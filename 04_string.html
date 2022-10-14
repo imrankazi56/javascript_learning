@@ -19,8 +19,61 @@
         console.log(greet,"Character At 8 Number is:-",greet.charAt(8));
        var char = greet.indexOf("M");//character place in witch position in string 
        console.log(char);
+        var fname="Virat";
+        var lname="Kolhi";
+        var result=fname.concat(" ","Daddy"," ",lname);
+        console.log(result);
+        console.log("==================================================================");
+        var greet="Good Morning Bro and sis";
+        var replaceDemo=greet.replace("Morning","Evening");
+        console.log(replaceDemo);
 
+        console.log("===========================================");
+        var upper=replaceDemo.toUpperCase();
+        console.log(upper);
+        console.log("==========================================");
+        var lower = replaceDemo.toLowerCase();
+        console.log(lower);
 
+        //trim
+
+        var ik =" Good Morning ";
+        var trimResult=ik.trim();
+        var y =trimResult.length;
+        console.log(trimResult.length);
+        console.log(ik.length);
+
+        var trimSpace=ik.length - y;//trim space calculate.
+        console.log(trimSpace);
+
+        ik.includes("Morning");//includes method finding string
+        console.log(ik.includes("Morning"));
+        console.log("=====================================");
+
+        console.log("==============Substring==================");
+        var greet="Good Morning Bro And Sis";
+       console.log(greet.substring(8)); 
+       console.log(greet.substring(13,17));//display only index position 13,17
+       console.log("====================Slice=====================");
+       console.log(greet.slice(13,17));
+       console.log(greet.slice(13));
+
+       console.log("==============split()===============");
+       var studentList  = "Sunil |Anil|Andy|Jenny| Lata";
+         var splitResult = studentList.split("|");
+        console.log(splitResult);
+
+        var ik = "Abc PQR XYZ";
+        console.log(ik.split("|"));
+//string template use for double quote.
+        var impQuote = `"Do or Die this attitude is important for this training"`;
+        console.log(impQuote);
+
+        // firs name : ${}last Name 
+        // output 
+        var fname = "virat";
+        var lname = "Kolhi";
+        console.log(`First Name:${fname} and Last Name ${lname}`);
     </script>
     
 </body>

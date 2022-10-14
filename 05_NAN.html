@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaN</title>
+</head>
+<body>
+    <script>
+        var myResult=0/0
+        console.log(myResult);
+        console.log(typeof myResult);
+
+        var myName = "Sachin";
+        var myage = "31";
+        console.log(typeof myName);
+        console.log(typeof myage);
+
+        var myAgeInNumber = +myage;
+        console.log(myAgeInNumber);
+
+        var myNamestring = +myName;
+        console.log(myNamestring,typeof myNamestring);
+
+        var num1=100;
+        var num2= 200;
+        console.log(num1+num2);//+Additiin
+
+        var num3 ="100";
+        var num4 ="200";
+        console.log(num3 + num4);//Concat
+
+        var n1 = +"100";
+        var n2 = +"200";
+        console.log(n1 + n2);
+
+        console.log("===== Implicit conversion======");
+        console.log("4"-true); // 4-1
+
+        var operand2 = 200;
+        console.log(operand2, typeof operand2);
+        var operand2Str =  operand2.toString();
+        console.log(operand2Str, typeof operand2Str);
+
+    </script>
+    
+</body>
+</html>
