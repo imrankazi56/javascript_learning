@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels</title>
+</head>
+<body>
+    <script>
+        var givenString = "I Love Javascript";
+         var totalChar=givenString.length;
+         for (let index = 0; index < totalChar; index++) {
+            if (index%2==0) {//display even number character on screen.
+                
+           
+           var charAt=givenString.charAt(index);
+           console.log(charAt);
+        }
+            
+         }
+         // WAP to dispaly Vowels
+         var givenString = "I Love Javascript";
+         console.log("================Just log Vowels================");
+         for (let index = 0; index < givenString.length; index++) {
+           var char=givenString.charAt(index);
+            if (char =="a"|| char =="e" || char=="i" || char=="o" || char=="u" || char=="A" || char=="E" || char=="I" | char=="O" || char=="U") {
+            console.log(char);
+           }      
+         }
+         //convert lower case
+         console.log("=====================Lower Case");
+         var strLowerCase =givenString.toLowerCase;
+         for (let index = 0; index < givenString.length; index++) {
+          var char=strLowerCase.charAt(index);
+          if (char =="a"|| char =="e" || char=="i" || char=="o" || char=="u") {
+            console.log(char);
+           }      
+         }
+    </script>
+    
+</body>
+</html>

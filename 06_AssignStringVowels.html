@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String And Vowels</title>
+</head>
+<body>
+    <h1>String Reverse and Vowels Count</h1>
+    <Script>
+        
+
+        console.log("===============================================");
+
+    var str = "Good Morning IT Champ";
+    var c = 0;
+    var i;
+    var lower = str.toLowerCase();
+    for (i = 0; i < str.length; i++) {
+        if (['a', 'e', 'i', 'o', 'u'].includes(lower[i])) {
+            c++;
+
+        }
+
+    }
+    console.log(`Total number of string in Vowels ${c}`);
+
+    console.log("==========================Count Vowels In the string========================");
+    var str = "I Love Javascript";
+    var c=0;
+    var i;
+    var lower = str.toLowerCase();
+    var vowels = "a,e,i,o,u";
+    for(i=0;i<lower.length;i++)
+    {
+        if(vowels.includes(lower[i])){
+            c++;
+
+        }
+    }
+    console.log("Total Number of vowels This string:-",c);
+
+
+        // WAP to sum 1 to 10 number
+        console.log("================================Addition 1 to 10 Number====================");
+        var add = 0;
+        for (let index = 0; index <=10; index++) {
+           
+            add = add + index;
+           
+            
+        }
+        console.log(`addition of 1 to 10 Number ${add}`);
+
+        // WAP sum of square of 1 to 5 number
+        console.log("======================Sum of square of 1 to 5==========================");
+        var add = 0;
+        for (let index = 0; index <=5; index++) {
+            add = add + index*index;
+           
+            
+        }
+        console.log(`Addition is ${add}`);
+
+        //WAP Print even Position
+        console.log("===================Even Position=====================");
+        console.log("============================");
+    function evenPositionedChars(myString) {
+        for (let index = 0; index < myString.length; index++) {
+            // console.log(index%2==0);
+            var chh = myString.charAt(index);
+            if (index % 2 == 0 && chh != " ") {
+                console.log(chh);
+            }
+            //var chh = myString.charAt(index);
+
+        }
+    }
+    evenPositionedChars("Hard work always pays back");
+
+    console.log("================================Odd Position=====================");
+
+    function oddPositionedChars(myString) {
+        for (let index = 0; index < myString.length; index++) {
+            // console.log(index%2==0);
+            var chh = myString.charAt(index);
+            if (index % ! 2 == 0 && chh != " ") {
+                console.log(chh);
+            }else
+            {
+                console.log(chh);
+            }
+            //var chh = myString.charAt(index);
+
+        }
+    }
+    oddPositionedChars("Soon i will be Angular IT Champ");
+
+        
+
+    </Script>
+</body>
+</html>
