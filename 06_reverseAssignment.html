@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>
+</head>
+<body>
+    <h1>Reverse String</h1>
+    <script>
+        function reverseString(str) {
+            var strLength = str.length-1;
+            var reverseStr=" ";
+            for (let index = strLength; index > 0; index--) {
+             reverseStr = reverseStr + str.charAt(index);
+                
+            }
+            console.log(`Reverse String is :-${reverseStr}`);
+            //console.log(`Reverse String Is "Soon I Will Be Angular IT Champ:-"${reverseStr}`);
+
+            
+        }reverseString("Hard Work Always Pays Back");
+        reverseString("Soon I will Be Angular IT Champ");
+
+        
+    </script>
+</body>
+</html>
