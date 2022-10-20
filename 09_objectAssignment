@@ -1,0 +1,37 @@
+let teacher={
+    name:"Hanument Kolawale",
+    dept:"Computer",
+    address:"Pune",
+    degree:{
+        education:"BE Computer",
+        phd:"Advance Compute",
+
+    },
+    certificate:{
+        certificates:"Hacker Rank Certificate",
+    },
+    details:function(){
+        let degreeDetails =`Degree Details are ${this.degree.education}, ${this.degree.phd}`;
+        //return degreeDetails;
+    }
+  
+    
+}
+console.log("===================Teacher Details===================");
+console.table(teacher);
+log
+teacher.Salary=65000;
+console.log(teacher.Salary);//add new property.
+let pDetails = teacher.details();
+teacher.dept="Computer Engineering";
+console.log(teacher.dept);
+delete teacher.certificate.certificates;
+teacher.certificate.certified="Advance Computer Course";
+console.log(teacher.certificate.certified);
+
+
+//console.log(pDetails);
+
+//console.log(teacher.address);
+//console.log(teacher.degree.phd);
+
